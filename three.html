@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://threejs.org/build/three.min.js"></script>
+<script type="text/javascript" src="three.js"></script>
+</head>
+<body onLoad="initialize(800, 600);">
+	<div id="canvas"></div>
+	<div id="infobox">
+		<button onclick="cameraTarget = null; camera.position.set(0, 0, 600); camera.rotation.set(0, 0, 0);">restore perspective</button>
+		<button onclick="cameraTarget = earth.boids[0];">to boid[0]</button>
+		<button onclick="cameraTarget = earth.boids[1];">to boid[1]</button>
+		<button onclick="cameraTarget = earth.boids[2];">to boid[2]</button>
+		<button onclick="cameraTarget = earth.boids[3];">to boid[3]</button>
+		<button onclick="cameraTarget = null; camera.position.set(0, 0, 0);">to blaze luminous</button>
+		<button onclick="camera.rotation.set(0, 0, 0);">reset rotation</button>
+	</div>
+</body>
+</html>
